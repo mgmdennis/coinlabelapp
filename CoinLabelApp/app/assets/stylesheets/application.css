@@ -1,0 +1,155 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,400italic);
+
+@page {
+    size: 8.5in 11in;
+  }
+
+body {
+	padding: 0mm;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.panelcontainer {
+	left:15mm;
+}
+
+.panel {
+	padding:0.2mm;
+	width:44mm;
+	max-width:44mm;
+	
+	height:44mm;
+	max-height:44mm;
+	
+	position: relative;
+}
+
+
+.panel1 {
+	left:0mm;
+}
+
+.panel2 {
+	left:42.2mm;
+}
+
+.panel3 {
+	left:84.4mm;
+}
+
+.panel4 {
+	left:126.6mm;
+}
+
+.label {
+	margin:0.75mm;
+	padding:0mm;
+	
+	font-size: 9pt;
+	
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.date {
+	position: absolute;
+	font-weight: bold;
+	font-size: 9pt;
+	
+	top:0mm;
+	left:0mm;
+}
+
+.notes {
+	position: absolute;
+	font-style: italic;
+	font-size: 8pt;
+	top:14pt;
+	left:0mm;
+}
+
+.mintage {
+	position: absolute;
+	bottom: 13pt;
+	
+	font-size: 8pt;
+}
+
+.country {
+	position: absolute;
+	font-weight: bold;
+	font-size: 9pt;
+	
+	bottom:0mm;
+	left:0mm;
+}
+
+.grade {
+	position: absolute;
+	right:1.5mm;
+	top:0mm;
+}
+
+.condition {
+	position: absolute;
+	font-style: italic;
+	font-size: 8pt;
+	right:0mm;
+	top:13pt;
+}
+
+.catalognumber {
+	position: absolute;
+	right:1.5mm;
+	bottom:0mm;
+}
+
+.denomination {
+	position: absolute;
+	
+	width:100%; /* or whatever width you want. */
+	
+	text-align: center;
+
+	margin-left:auto;
+	margin-right:auto;
+	
+	top:0mm;
+}
+
+.qrcode {
+	position:absolute;
+	width:99%;
+	height:99%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+	border: 0.05mm solid;
+	padding: 0px;
+	margin: 0px;
+}
+
+

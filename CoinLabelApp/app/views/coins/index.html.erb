@@ -1,0 +1,50 @@
+<div class="messages">
+  <div class="container">
+  
+  	<table>
+		<tr>
+			<th>Country</th>
+			<th>Date</th>
+			<th>Notes</th>
+			<th>Denomination</th>
+			<th>Mintage</th>
+			<th>Catalog #</th>
+			<th>Grade</th>
+			<th>Condition</th>
+			<th>Extra Notes</th>
+			<th>Controls</th>
+		</tr>
+  	
+	    <% @coins.each do |coin| %>
+		<tr>
+			<td><%= coin.country %></td>
+			<td><%= coin.date %></td>
+			<td><%= coin.notes %></td>
+			<td><%= coin.denomination %></td>
+			<td><%= coin.mintage %></td>
+			<td><%= coin.catalog_no %></td>
+	  		<td><%= coin.grade %></td>
+			<td><%= coin.condition_notes %></td>
+			<td><%= coin.other_notes %></td>
+			<td>
+				<%= link_to 'Edit', edit_coin_path(coin) %>
+				<%= link_to 'Duplicate', duplicate_coin_path(coin) %>
+				<%= link_to 'Delete', delete_coin_path(coin),
+					method: :delete,
+		            data: { confirm: 'Are you sure you want to delete this coin?' }%>
+			</td>
+		</tr>
+		<% end %>
+		
+	   
+	
+	</table>
+	
+	 <%= link_to 'Add', new_coin_path() %>
+	 <%= link_to 'Print', print_coins_path() %>
+	 <%= link_to 'Clear All', clear_coins_path(),
+	 	method: :delete,
+		data: { confirm: 'Are you sure you want to delete all coins?' }%>
+
+  </div>
+</div>
