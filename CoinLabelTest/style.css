@@ -1,0 +1,139 @@
+@page {
+    size: 8.5in 11in;
+  }
+
+body {
+	padding: 0mm;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.panelcontainer {
+	left:15mm;
+}
+
+.panel {
+	padding:0.2mm;
+	width:42mm;
+	max-width:42mm;
+	
+	height:42mm;
+	max-height:42mm;
+	
+	position: relative;
+}
+
+
+.panel1 {
+	left:0mm;
+}
+
+.panel2 {
+	left:42.2mm;
+}
+
+.panel3 {
+	left:84.4mm;
+}
+
+.panel4 {
+	left:126.6mm;
+}
+
+.label {
+	margin:0.75mm;
+	padding:0mm;
+	
+	font-size: 8pt;
+	font-stretch: condensed;
+	letter-spacing: -.5px;
+	
+	font-family: sans-serif;
+}
+
+.date {
+	position: absolute;
+	font-weight: bold;
+	font-size: 8pt;
+	
+	top:0mm;
+	left:0mm;
+}
+
+.notes {
+	position: absolute;
+	font-style: italic;
+	font-size: 8pt;
+	top:14pt;
+	left:0mm;
+}
+
+.mintage {
+	position: absolute;
+	bottom: 13pt;
+	
+	font-size: 7pt;
+}
+
+.country {
+	position: absolute;
+	font-weight: bold;
+	font-size: 8pt;
+	
+	bottom:0mm;
+	left:0mm;
+}
+
+.grade {
+	position: absolute;
+	right:1.5mm;
+	top:0mm;
+}
+
+.condition {
+	position: absolute;
+	font-style: italic;
+	font-size: 8pt;
+	right:0mm;
+	top:13pt;
+}
+
+.catalognumber {
+	position: absolute;
+	right:1.5mm;
+	bottom:0mm;
+}
+
+.denomination {
+	position: absolute;
+	
+	width:100%; /* or whatever width you want. */
+	
+	text-align: center;
+
+	margin-left:auto;
+	margin-right:auto;
+	
+	top:0mm;
+}
+
+.qrcode {
+	position:absolute;
+	width:99%;
+	height:99%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+	border: 0.05mm solid;
+	padding: 0px;
+	margin: 0px;
+}
+
+

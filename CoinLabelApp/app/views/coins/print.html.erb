@@ -35,7 +35,18 @@
 					<td>
 						<div class="panel">
 							<img class="qrcode" src="<%= @qrcodes[index].to_data_url %>" />
+							<div class="composition label">
+								<%= coin.composition %>
+							</div>
+							<div class="diameter label">
+								&#x2300; <%= coin.diameter %>
+							</div>
+							<div class="mass label">
+								<%= coin.mass %>
+							</div>
+
 						</div>
+						
 					</td>
 			<% if ((index % 2) == 1) %>
 				</tr>

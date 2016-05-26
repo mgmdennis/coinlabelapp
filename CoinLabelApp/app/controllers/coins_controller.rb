@@ -157,14 +157,14 @@ private
   def generateQrCode(coin)
     toencode = ""
     
-    toencode = stringBuilder(toencode, "", coin.country)
-    toencode = stringBuilder(toencode, "", coin.denomination)
-    toencode = stringBuilder(toencode, "", coin.date)
-    toencode = stringBuilder(toencode, "", coin.notes)
+    #toencode = stringBuilder(toencode, "", coin.country)
+    #toencode = stringBuilder(toencode, "", coin.denomination)
+    #toencode = stringBuilder(toencode, "", coin.date)
+    #toencode = stringBuilder(toencode, "", coin.notes)
     #toencode = stringBuilder(toencode, "Mintage", coin.mintage)
-    toencode = stringBuilder(toencode, "", coin.grade)
+    #toencode = stringBuilder(toencode, "", coin.grade)
     #toencode = stringBuilder(toencode, "", coin.condition_notes)
-    toencode = stringBuilder(toencode, "", coin.catalog_no)
+    #toencode = stringBuilder(toencode, "", coin.catalog_no)
     #toencode = stringBuilder(toencode, "Diameter", coin.diameter)
     #toencode = stringBuilder(toencode, "Thickness", coin.thickness)
     #toencode = stringBuilder(toencode, "Shape", coin.shape)
@@ -175,9 +175,7 @@ private
     
     
     qrcode = RQRCode::QRCode.new(toencode)
-    
-    
-    
+
     image = qrcode.as_png
     return image
   end

@@ -138,8 +138,34 @@ h1 {
 
 .qrcode {
 	position:absolute;
-	width:99%;
-	height:99%;
+	left:6mm;
+	top:1.5mm;
+	width:75%;
+	height:75%;
+}
+
+.composition {
+	position: absolute;
+	right:1.5mm;
+	bottom:0mm;
+	
+	font-size: 8pt;
+}
+
+.diameter {
+	position: absolute;
+	bottom: 13pt;
+	left:1.5mm;
+	
+	font-size: 8pt;
+}
+
+.mass {
+	position: absolute;
+	bottom:0mm;
+	left:1.5mm;
+
+	font-size: 8pt;
 }
 
 table {
@@ -147,7 +173,8 @@ table {
 }
 
 table, th, td {
-	border: 0.05mm solid;
+	border: 0.01mm solid;
+	border-style:dotted;
 	padding: 0px;
 	margin: 0px;
 }
