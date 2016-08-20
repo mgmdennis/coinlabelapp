@@ -41,7 +41,7 @@
   
   <div class="field"> 
     <%= f.label "Composition" %><br> 
-    <%= f.text_field :composition %> 
+    <%= f.text_area :composition %> 
   </div>
   
   <div class="field"> 
@@ -74,8 +74,16 @@
   <div class="actions"> 
     <%= f.submit "Update" %> 
   </div>
+  
+  
 <% end %>
 
-<img src="<%= @img.to_data_url %>" />
+<br>
 
+<table>
+<%= render partial: "coin", locals: { coin: @coin, qr: @img} %>
+</table>
 
+<br>
+
+<%= link_to 'Back', coins_path() %>

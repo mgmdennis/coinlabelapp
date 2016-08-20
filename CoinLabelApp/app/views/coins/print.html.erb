@@ -1,12 +1,5 @@
 <%= stylesheet_link_tag "coindlabelstyle.css" %>
 
-<div class="header">
-  <div class="container">
-    <h1>Coin Labeler</h1>
-  </div>
-</div>
-
-
 <div class="messages">
   <div class="container">
   
@@ -16,38 +9,7 @@
 			<% if ((index % 2) == 0) %>
 				<tr>
 			<% end %>
-					<td>
-						<div class="panel">
-							<div class="date label"><%= coin.date %></div>
-							<div class="notes label"><%= coin.notes %></div>
-							<div class="country label"><%= coin.country %></div>
-							<% if (coin.mintage != nil && coin.mintage.length > 0)%>
-								<div class="mintage label">m. <%= coin.mintage %></div>
-							<% end %>
-							<div class="denomination label"><%= coin.denomination %></div>
-							<div class="grade label"><%= coin.grade %></div>
-							<% if (coin.condition_notes != nil && coin.condition_notes.length > 0)%>
-								<div class="condition label">"<%= coin.condition_notes %>"</div>
-							<% end %>
-							<div class="catalognumber label"><%= coin.catalog_no %></div>
-						</div>
-					</td>
-					<td>
-						<div class="panel">
-							<img class="qrcode" src="<%= @qrcodes[index].to_data_url %>" />
-							<div class="composition label">
-								<%= coin.composition %>
-							</div>
-							<div class="diameter label">
-								&#x2300; <%= coin.diameter %>
-							</div>
-							<div class="mass label">
-								<%= coin.mass %>
-							</div>
-
-						</div>
-						
-					</td>
+					<%= render partial: "coin", locals: { coin: coin, qr: @qrcodes[index]} %>
 			<% if ((index % 2) == 1) %>
 				</tr>
 			<% end %>
@@ -58,7 +20,7 @@
 	</table>
 	
 	
-	<%= link_to 'Back', coins_path() %>
+	<!--<%= link_to 'Back', coins_path() %>-->
 
   </div>
 </div>

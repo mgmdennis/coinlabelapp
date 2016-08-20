@@ -38,8 +38,8 @@ h1 {
 	width:44mm;
 	max-width:44mm;
 	
-	height:44mm;
-	max-height:44mm;
+	height:43mm;
+	max-height:43mm;
 	
 	position: relative;
 }
@@ -68,6 +68,10 @@ h1 {
 	font-size: 9pt;
 	
 	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.condense {
+	letter-spacing: -0.20mm;
 }
 
 .date {
@@ -107,6 +111,17 @@ h1 {
 	position: absolute;
 	right:1.5mm;
 	top:0mm;
+
+}
+
+.entrydate {
+	position: absolute;
+	right:1.5mm;
+	top:0mm;
+	
+	
+	font-size: 7pt;
+	color: gray;
 }
 
 .condition {
@@ -148,6 +163,8 @@ h1 {
 	position: absolute;
 	right:1.5mm;
 	bottom:0mm;
+	width:60%;
+	text-align: right;
 	
 	font-size: 8pt;
 }

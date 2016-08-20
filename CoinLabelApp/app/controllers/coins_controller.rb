@@ -40,9 +40,8 @@ class CoinsController < ApplicationController
   def update
     @coin = Coin.find(params[:id])
     if @coin.update(coin_params)
-      redirect_to '/coins'
-    else
-      render 'edit'
+      @coin = Coin.find(params[:id])
+      redirect_to coin_path(@coin)
     end
   end
   def destroy
@@ -157,14 +156,15 @@ private
   def generateQrCode(coin)
     toencode = ""
     
-    #toencode = stringBuilder(toencode, "", coin.country)
+    toencode = stringBuilder(toencode, "", coin.country)
     #toencode = stringBuilder(toencode, "", coin.denomination)
-    #toencode = stringBuilder(toencode, "", coin.date)
-    #toencode = stringBuilder(toencode, "", coin.notes)
+    toencode = stringBuilder(toencode, "", coin.date)
+    toencode = stringBuilder(toencode, "", coin.notes)
     #toencode = stringBuilder(toencode, "Mintage", coin.mintage)
     #toencode = stringBuilder(toencode, "", coin.grade)
     #toencode = stringBuilder(toencode, "", coin.condition_notes)
-    #toencode = stringBuilder(toencode, "", coin.catalog_no)
+    toencode = stringBuilder(toencode, "", coin.catalog_no)
+    toencode = stringBuilder(toencode, "", coin.grade)
     #toencode = stringBuilder(toencode, "Diameter", coin.diameter)
     #toencode = stringBuilder(toencode, "Thickness", coin.thickness)
     #toencode = stringBuilder(toencode, "Shape", coin.shape)
@@ -189,7 +189,7 @@ private
       if (tag != nil && tag.length > 0)
         string = string + tag + ": "
       end
-      string = string + concat + "\n"
+      string = string + concat + ", "
     end
     return string
   end
