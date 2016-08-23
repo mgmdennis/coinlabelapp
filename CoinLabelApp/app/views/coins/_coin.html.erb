@@ -1,0 +1,68 @@
+					<td>
+						<div class="panel">
+							<% if (coin.date != nil && coin.date.length > 6)%>
+								<div class="date label condense">
+									<%= coin.date %>
+								</div>
+							<% else %>
+								<div class="date label">
+									<%= coin.date %>
+								</div>
+							<% end %>
+							
+							
+							<%= simple_format(coin.notes, {class: "notes label", wrapper_tag: "div"}) %>
+							
+							<% if (coin.country != nil && coin.country.length > 14)%>
+								<div class="country label condense">
+									<%= coin.country %>
+								</div>
+							<% else %>
+								<div class="country label">
+									<%= coin.country %>
+								</div>
+							<% end %>
+							<% if (coin.mintage != nil && coin.mintage.length > 0)%>
+								<div class="mintage label">m. <%= coin.mintage %></div>
+							<% end %>
+							
+							<% if (coin.denomination != nil && coin.denomination.length > 12)%>
+								<div class="denomination label condense">
+									<%= coin.denomination %>
+								</div>
+							<% else %>
+								<div class="denomination label">
+									<%= coin.denomination %>
+								</div>
+							<% end %>
+							<div class="grade label"><%= coin.grade %></div>
+							<% if (coin.condition_notes != nil && coin.condition_notes.length > 0)%>
+								<div class="condition label">"<%= coin.condition_notes %>"</div>
+							<% end %>
+							<div class="catalognumber label"><%= coin.catalog_no %></div>
+						</div>
+					</td>
+					<td>
+						<div class="panel">
+							
+							<img class="qrcode" src="<%= qr.to_data_url %>" />
+							<div class="entrydate label">
+								<%= Time.now.strftime("%Y-%^b-%d") %>
+							</div>
+							<% if (coin.composition != nil && coin.composition.length > 18)%>
+								<%= simple_format(coin.composition, {class: "composition label condense", wrapper_tag: "div"}) %>
+							<% else %>
+								<%= simple_format(coin.composition, {class: "composition label", wrapper_tag: "div"}) %>
+							<% end %>
+							
+							
+							<div class="diameter label">
+								&#x2300; <%= coin.diameter %>
+							</div>
+							<div class="mass label">
+								<%= coin.mass %>
+							</div>
+
+						</div>
+						
+					</td>
