@@ -1,0 +1,81 @@
+<%= form_for coin, html: {class: "pure-form pure-form-aligned"} do |f| %>  
+<fieldset>
+
+  <div class="pure-control-group"> 
+    <%= f.label "Country" %>
+    <%= f.text_field :country %> 
+  </div>
+  <div class="pure-control-group"> 
+    <%= f.label "Denomination" %>
+    <%= f.text_field :denomination %> 
+  </div>
+  <div class="pure-control-group"> 
+    <%= f.label "Date" %>
+    <%= f.text_field :date %> 
+  </div>
+  <div class="pure-control-group"> 
+    <%= f.label "Notes" %>
+    <%= f.text_area :notes %> 
+  </div>
+  <div class="pure-control-group"> 
+    <%= f.label "Mintage" %>
+    <%= f.text_field :mintage %> 
+  </div>
+  <div class="pure-control-group"> 
+    <%= f.label "Grade" %>
+    <%= f.text_field :grade %> 
+  </div>
+  <div class="pure-control-group"> 
+    <%= f.label "Condition notes" %>
+    <%= f.text_area :condition_notes %> 
+  </div>
+  <div class="pure-control-group"> 
+    <%= f.label "Catalog number" %>
+    <%= f.text_field :catalog_no %> 
+  </div>
+ 
+  
+  <div class="pure-control-group"> 
+    <%= f.label "Diameter" %> 
+    <%= f.text_field :diameter %> 
+  </div>
+  
+  <div class="pure-control-group"> 
+    <%= f.label "Composition" %>
+    <%= f.text_field :composition %> 
+  </div>
+  
+  <div class="pure-control-group"> 
+    <%= f.label "Mass" %> 
+    <%= f.text_field :mass %> 
+  </div>
+  
+  <div class="pure-control-group"> 
+    <%= f.label "Thickness" %>
+    <%= f.text_field :thickness %> 
+  </div>
+  
+  <div class="pure-control-group"> 
+    <%= f.label "Shape" %> 
+    <%= f.text_field :shape %> 
+  </div>
+
+  
+  <div class="pure-control-group"> 
+    <%= f.label "Orientation" %>
+    <%= f.text_field :orientation %> 
+  </div>
+  
+  <div class="pure-control-group"> 
+    <%= f.label "Other notes" %>
+    <%= f.text_area :other_notes %> 
+  </div>
+  
+  
+  
+  <div class="pure-controls"> 
+    <%= f.submit submitText, :class => 'pure-button pure-button-primary' %> 
+  </div> 
+  
+  </fieldset>
+  <% end %>

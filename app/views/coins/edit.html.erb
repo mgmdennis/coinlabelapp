@@ -1,82 +1,8 @@
-<%= form_for(@coin) do |f| %>  
-  <div class="field"> 
-    <%= f.label "Country" %><br> 
-    <%= f.text_field :country %> 
-  </div>
-  <div class="field"> 
-    <%= f.label "Denomination" %><br> 
-    <%= f.text_field :denomination %> 
-  </div>
-  <div class="field"> 
-    <%= f.label "Date" %><br> 
-    <%= f.text_field :date %> 
-  </div>
-  <div class="field"> 
-    <%= f.label "Notes" %><br> 
-    <%= f.text_area :notes %> 
-  </div>
-  <div class="field"> 
-    <%= f.label "Mintage" %><br> 
-    <%= f.text_field :mintage %> 
-  </div>
-  <div class="field"> 
-    <%= f.label "Grade" %><br> 
-    <%= f.text_field :grade %> 
-  </div>
-  <div class="field"> 
-    <%= f.label "Condition notes" %><br> 
-    <%= f.text_area :condition_notes %> 
-  </div>
-  <div class="field"> 
-    <%= f.label "Catalog number" %><br> 
-    <%= f.text_field :catalog_no %> 
-  </div>
-  
-  <hr>
-  
-  <div class="field"> 
-    <%= f.label "Diameter" %><br> 
-    <%= f.text_field :diameter %> 
-  </div>
-  
-  <div class="field"> 
-    <%= f.label "Composition" %><br> 
-    <%= f.text_area :composition %> 
-  </div>
-  
-  <div class="field"> 
-    <%= f.label "Mass" %><br> 
-    <%= f.text_field :mass %> 
-  </div>
-  
-  <div class="field"> 
-    <%= f.label "Thickness" %><br> 
-    <%= f.text_field :thickness %> 
-  </div>
-  
-  <div class="field"> 
-    <%= f.label "Shape" %><br> 
-    <%= f.text_field :shape %> 
-  </div>
-  
-  <div class="field"> 
-    <%= f.label "Orientation" %><br> 
-    <%= f.text_field :orientation %> 
-  </div>
-  
-  <div class="field"> 
-    <%= f.label "Other notes" %><br> 
-    <%= f.text_area :other_notes %> 
-  </div>
-  
-  <hr>
-  
-  <div class="actions"> 
-    <%= f.submit "Update" %> 
-  </div>
-  
-  
-<% end %>
+<div class="layout" >
+
+<h1>Edit Coin Label</h1>
+
+<%= render partial: "newcoin", locals: { coin: @coin, submitText: "Update"} %>
 
 <br>
 
@@ -86,4 +12,10 @@
 
 <br>
 
-<%= link_to 'Back', coins_path() %>
+	<div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+		<ul class="pure-menu-list">
+			 <li class="pure-menu-item"><%= link_to 'Back', coins_path(), { :class=>"pure-menu-link" } %></li>
+		</ul>
+	</div>
+
+</div>
