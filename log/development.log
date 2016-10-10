@@ -1,0 +1,525 @@
+
+
+Started GET "/coins/41" for ::1 at 2016-10-04 21:57:31 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.3ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.8ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.1ms)
+
+
+Started GET "/coins/" for ::1 at 2016-10-04 21:57:35 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.7ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.1ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.3ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.1ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (132.8ms)
+
+
+Started GET "/coins/" for ::1 at 2016-10-04 21:57:47 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.5ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (139.1ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (195.2ms)
+  [1m[36m (8.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (8.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCoins (20160204015459)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/madennis/Documents/dgml/coinlabel/coinlabelapp/db/migrate/20160204015459_create_coins.rb:22)
+  [1m[35m (1.2ms)[0m  CREATE TABLE "coins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fastinput" text, "country" varchar, "date" varchar, "denomination" varchar, "grade" varchar, "notes" text, "condition_notes" text, "mintage" varchar, "catalog_no" varchar, "other_notes" text, "diameter" varchar, "composition" varchar, "mass" varchar, "thickness" varchar, "shape" varchar, "orientation" varchar, "qrcode" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160204015459"]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/coins/" for ::1 at 2016-10-04 21:58:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoinsController#index as HTML
+  [1m[35mCoin Load (0.4ms)[0m  SELECT "coins".* FROM "coins"
+  Rendered coins/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 6812ms (Views: 6776.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/coins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-10-04 21:58:34 -0400
+
+
+Started GET "/assets/application.self-0e924e8d3a0b63b62fb2d9a8ad60675574a585a81bf0603f4aed4853bb011d75.css?body=1" for ::1 at 2016-10-04 21:58:35 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-10-04 21:58:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-10-04 21:58:35 -0400
+
+
+Started GET "/assets/coins.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-10-04 21:58:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-10-04 21:58:35 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-10-04 21:58:35 -0400
+
+
+Started GET "/coins/new" for ::1 at 2016-10-04 21:58:37 -0400
+Processing by CoinsController#new as HTML
+  Rendered coins/new.html.erb within layouts/application (170.6ms)
+Completed 200 OK in 258ms (Views: 208.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/coins/new/fastinput" for ::1 at 2016-10-04 21:59:44 -0400
+Processing by CoinsController#fastinput as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t+QskwyjvRGD9YJN+QBdIyzyT7DuDhZBIuogelhJ4jKYEU3rwSxj/g3pYeB3hE9yVl4MyuZcSNHj3v9QnhZHbw==", "coin"=>{"fastinput"=>"\r\nCountry\tNewfoundland \r\nYears\t1865-1888\r\nValue\t2 Dollars (2 NFD)\r\nMetal\tGold (.917)\r\nWeight\t3.3284 g\r\nDiameter\t17.98 mm\r\nShape\tRound\r\nOrientation\tCoin alignment ↑↓\r\nDemonetized\tyes\r\nReferences\tKM# 5"}, "commit"=>"Apply Fast Input"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "coins" ("fastinput", "country", "denomination", "composition", "mass", "diameter", "shape", "orientation", "catalog_no", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["fastinput", "\r\nCountry\tNewfoundland \r\nYears\t1865-1888\r\nValue\t2 Dollars (2 NFD)\r\nMetal\tGold (.917)\r\nWeight\t3.3284 g\r\nDiameter\t17.98 mm\r\nShape\tRound\r\nOrientation\tCoin alignment ↑↓\r\nDemonetized\tyes\r\nReferences\tKM# 5"], ["country", "Newfoundland \r"], ["denomination", "2 Dollars "], ["composition", "Gold (.917)\r"], ["mass", "3.3284 g\r"], ["diameter", "17.98 mm\r"], ["shape", "Round\r"], ["orientation", "Coin alignment ↑↓\r"], ["catalog_no", "KM 5"], ["created_at", "2016-10-05 01:59:44.274207"], ["updated_at", "2016-10-05 01:59:44.274207"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coins/1
+Completed 302 Found in 35ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/coins/1" for ::1 at 2016-10-04 21:59:44 -0400
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoin Load (0.7ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered coins/_coin.html.erb (65.1ms)
+  Rendered coins/edit.html.erb within layouts/application (89.8ms)
+Completed 200 OK in 574ms (Views: 125.9ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/coins/1" for ::1 at 2016-10-04 22:00:02 -0400
+Processing by CoinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H4wNDcw0Y90NtuKF8RCYFUcJ8klLIn645Ym/OGCOh8EweWx1Abu9MoOqASh/lIpEPaWxM0NwICgkvWASptEinA==", "coin"=>{"country"=>"Newfoundland ", "denomination"=>"2 Dollars ", "date"=>"1888", "notes"=>"", "mintage"=>"232,000", "grade"=>"UNC", "condition_notes"=>"", "catalog_no"=>"KM 5", "diameter"=>"17.98 mm", "composition"=>"Gold (.917)\r\n", "mass"=>"3.3284 g", "thickness"=>"", "shape"=>"Round", "orientation"=>"Coin alignment ↑↓", "other_notes"=>""}, "commit"=>"Update", "id"=>"1"}
+  [1m[36mCoin Load (0.3ms)[0m  [1mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "coins" SET "country" = ?, "date" = ?, "grade" = ?, "notes" = ?, "condition_notes" = ?, "mintage" = ?, "other_notes" = ?, "diameter" = ?, "composition" = ?, "mass" = ?, "thickness" = ?, "shape" = ?, "orientation" = ?, "updated_at" = ? WHERE "coins"."id" = ?[0m  [["country", "Newfoundland "], ["date", "1888"], ["grade", "UNC"], ["notes", ""], ["condition_notes", ""], ["mintage", "232,000"], ["other_notes", ""], ["diameter", "17.98 mm"], ["composition", "Gold (.917)\r\n"], ["mass", "3.3284 g"], ["thickness", ""], ["shape", "Round"], ["orientation", "Coin alignment ↑↓"], ["updated_at", "2016-10-05 02:00:02.415644"], ["id", 1]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36mCoin Load (0.4ms)[0m  [1mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/coins/1
+Completed 302 Found in 28ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/coins/1" for ::1 at 2016-10-04 22:00:02 -0400
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoin Load (0.3ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered coins/_coin.html.erb (78.4ms)
+  Rendered coins/edit.html.erb within layouts/application (97.5ms)
+Completed 200 OK in 697ms (Views: 139.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/coins/" for ::1 at 2016-10-04 22:24:08 -0400
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.5.1) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.5.1) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.5.1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.5.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.5.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.5.1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.5.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.5.1) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.5.1) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/madennis/.rvm/rubies/ruby-2.0.0-p648/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.0ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.4ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/madennis/.rvm/gems/ruby-2.0.0-p648/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (65.5ms)
+  [1m[36m (33.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (22.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCoins (20160204015459)
+  [1m[35m (0.1ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/madennis/Documents/dgml/coinlabel/coinlabelapp/db/migrate/20160204015459_create_coins.rb:22)
+  [1m[36m (27.3ms)[0m  [1mCREATE TABLE "coins" ("id" serial primary key, "fastinput" text, "country" character varying, "date" character varying, "denomination" character varying, "grade" character varying, "notes" text, "condition_notes" text, "mintage" character varying, "catalog_no" character varying, "other_notes" text, "diameter" character varying, "composition" character varying, "mass" character varying, "thickness" character varying, "shape" character varying, "orientation" character varying, "qrcode" character varying, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160204015459"]]
+  [1m[36m (5.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'coins'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/coins" for 127.0.0.1 at 2016-10-09 20:23:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoinsController#index as HTML
+  [1m[35mCoin Load (0.6ms)[0m  SELECT "coins".* FROM "coins"
+  Rendered coins/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 376ms (Views: 359.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/coins/new" for 127.0.0.1 at 2016-10-09 20:23:58 -0400
+Processing by CoinsController#new as HTML
+  Rendered coins/new.html.erb within layouts/application (84.6ms)
+Completed 200 OK in 122ms (Views: 102.9ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/coins" for 127.0.0.1 at 2016-10-09 20:25:32 -0400
+Processing by CoinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ms8qMXkyzNZNS22l2+hDfCIyu+DN183gy7PITR+kw4YyIC2fbDDaUfDOC186ljd0XmQvjYTT8MJ6X8fmmkSNcw==", "coin"=>{"country"=>"Albania", "denomination"=>"1 Lek", "date"=>"1999", "notes"=>"", "mintage"=>"45,345,000", "grade"=>"VF+", "condition_notes"=>"", "catalog_no"=>"KM 343", "diameter"=>"", "composition"=>"", "mass"=>"", "thickness"=>"", "shape"=>"", "orientation"=>"", "other_notes"=>""}, "commit"=>"Create"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (23.4ms)[0m  INSERT INTO "coins" ("country", "date", "denomination", "grade", "notes", "condition_notes", "mintage", "catalog_no", "other_notes", "diameter", "composition", "mass", "thickness", "shape", "orientation", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17) RETURNING "id"  [["country", "Albania"], ["date", "1999"], ["denomination", "1 Lek"], ["grade", "VF+"], ["notes", ""], ["condition_notes", ""], ["mintage", "45,345,000"], ["catalog_no", "KM 343"], ["other_notes", ""], ["diameter", ""], ["composition", ""], ["mass", ""], ["thickness", ""], ["shape", ""], ["orientation", ""], ["created_at", "2016-10-10 00:25:32.622951"], ["updated_at", "2016-10-10 00:25:32.622951"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/coins/1
+Completed 302 Found in 32ms (ActiveRecord: 24.4ms)
+
+
+Started GET "/coins/1" for 127.0.0.1 at 2016-10-09 20:25:32 -0400
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoin Load (0.4ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered coins/_coin.html.erb (50.5ms)
+  Rendered coins/edit.html.erb within layouts/application (68.4ms)
+Completed 200 OK in 280ms (Views: 96.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/coins" for 127.0.0.1 at 2016-10-09 20:25:37 -0400
+Processing by CoinsController#index as HTML
+  [1m[36mCoin Load (0.4ms)[0m  [1mSELECT "coins".* FROM "coins"[0m
+  Rendered coins/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/coins/1/duplicate" for 127.0.0.1 at 2016-10-09 20:25:40 -0400
+Processing by CoinsController#duplicate as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoin Load (0.4ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "coins" ("country", "date", "denomination", "grade", "notes", "condition_notes", "mintage", "catalog_no", "other_notes", "diameter", "composition", "mass", "thickness", "shape", "orientation", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17) RETURNING "id"  [["country", "Albania"], ["date", "1999"], ["denomination", "1 Lek"], ["grade", "VF+"], ["notes", ""], ["condition_notes", ""], ["mintage", "45,345,000"], ["catalog_no", "KM 343"], ["other_notes", ""], ["diameter", ""], ["composition", ""], ["mass", ""], ["thickness", ""], ["shape", ""], ["orientation", ""], ["created_at", "2016-10-10 00:25:40.786554"], ["updated_at", "2016-10-10 00:25:40.786554"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/coins
+Completed 302 Found in 12ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/coins" for 127.0.0.1 at 2016-10-09 20:25:40 -0400
+Processing by CoinsController#index as HTML
+  [1m[35mCoin Load (0.3ms)[0m  SELECT "coins".* FROM "coins"
+  Rendered coins/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/coins/2/edit" for 127.0.0.1 at 2016-10-09 20:25:44 -0400
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.4ms)[0m  [1mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered coins/_coin.html.erb (27.2ms)
+  Rendered coins/edit.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 215ms (Views: 60.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/coins/2" for 127.0.0.1 at 2016-10-09 20:25:52 -0400
+Processing by CoinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Co081IlRc+uF+4Zg5K2munXpzNxT4Y+YTvY6VNGG+g2iYjt6nFNlbDh+4JoF09KyCb9YsRrlsrr/GjX/VGa0+A==", "coin"=>{"country"=>"Tanzania", "denomination"=>"1 Lek", "date"=>"1999", "notes"=>"", "mintage"=>"45,345,000", "grade"=>"VF+", "condition_notes"=>"", "catalog_no"=>"KM 343", "diameter"=>"", "composition"=>"", "mass"=>"", "thickness"=>"", "shape"=>"", "orientation"=>"", "other_notes"=>""}, "commit"=>"Update", "id"=>"2"}
+  [1m[35mCoin Load (0.3ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "coins" SET "country" = $1, "updated_at" = $2 WHERE "coins"."id" = $3  [["country", "Tanzania"], ["updated_at", "2016-10-10 00:25:52.136946"], ["id", 2]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCoin Load (0.3ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/coins/2
+Completed 302 Found in 13ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2016-10-09 20:25:52 -0400
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.3ms)[0m  [1mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered coins/_coin.html.erb (21.3ms)
+  Rendered coins/edit.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 224ms (Views: 43.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/coins/2" for 127.0.0.1 at 2016-10-09 20:26:10 -0400
+Processing by CoinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zzkGPuiXmX+HxeKK1OC9w2wsSmpzpQsAap9539rhm6xn1gGQ/ZWP+DpAhHA1nsnLEHreBzqhNiLbc3Z0XwHVWQ==", "coin"=>{"country"=>"Tanzania", "denomination"=>"1 Shilling", "date"=>"1999", "notes"=>"", "mintage"=>"45,345,000", "grade"=>"VF+", "condition_notes"=>"", "catalog_no"=>"KM 343", "diameter"=>"", "composition"=>"", "mass"=>"", "thickness"=>"", "shape"=>"", "orientation"=>"", "other_notes"=>""}, "commit"=>"Update", "id"=>"2"}
+  [1m[35mCoin Load (0.2ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "coins" SET "denomination" = $1, "updated_at" = $2 WHERE "coins"."id" = $3  [["denomination", "1 Shilling"], ["updated_at", "2016-10-10 00:26:10.839259"], ["id", 2]]
+  [1m[36m (5.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCoin Load (0.5ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/coins/2
+Completed 302 Found in 14ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2016-10-09 20:26:10 -0400
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered coins/_coin.html.erb (21.1ms)
+  Rendered coins/edit.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 210ms (Views: 57.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/coins/2" for 127.0.0.1 at 2016-10-09 20:26:32 -0400
+Processing by CoinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pNVlOExEgozm/JI/9taJSuukXRpIzEcuIEzl55Y0vBUMOmKWWUaUC1t59MUXqP1Cl/LJdwHIegyRoOpME9Ty4A==", "coin"=>{"country"=>"Tanzania", "denomination"=>"1 Shilling", "date"=>"1999", "notes"=>"", "mintage"=>"45,345,000", "grade"=>"VF+", "condition_notes"=>"", "catalog_no"=>"KM 343", "diameter"=>"", "composition"=>"", "mass"=>"434.3 g", "thickness"=>"", "shape"=>"", "orientation"=>"", "other_notes"=>""}, "commit"=>"Update", "id"=>"2"}
+  [1m[35mCoin Load (0.2ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "coins" SET "mass" = $1, "updated_at" = $2 WHERE "coins"."id" = $3  [["mass", "434.3 g"], ["updated_at", "2016-10-10 00:26:32.914095"], ["id", 2]]
+  [1m[36m (5.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mCoin Load (0.2ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/coins/2
+Completed 302 Found in 11ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2016-10-09 20:26:32 -0400
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered coins/_coin.html.erb (27.0ms)
+  Rendered coins/edit.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 247ms (Views: 74.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/coins/2" for 127.0.0.1 at 2016-10-09 20:26:43 -0400
+Processing by CoinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"92PswPm++VmsnXkhB1KX4hjXbrheIDUADrZOlUu31h1fjOtu7Lzv3hEYH9vmLOPqZIH61RckCCK/WkE+zleY6A==", "coin"=>{"country"=>"Tanzania", "denomination"=>"1 Shilling", "date"=>"1999", "notes"=>"", "mintage"=>"45,345,000", "grade"=>"VF+", "condition_notes"=>"", "catalog_no"=>"KM 343", "diameter"=>"34.2", "composition"=>"", "mass"=>"434.3 g", "thickness"=>"", "shape"=>"", "orientation"=>"", "other_notes"=>""}, "commit"=>"Update", "id"=>"2"}
+  [1m[35mCoin Load (0.3ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "coins" SET "diameter" = $1, "updated_at" = $2 WHERE "coins"."id" = $3  [["diameter", "34.2"], ["updated_at", "2016-10-10 00:26:43.735747"], ["id", 2]]
+  [1m[36m (5.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCoin Load (0.2ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/coins/2
+Completed 302 Found in 11ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2016-10-09 20:26:43 -0400
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered coins/_coin.html.erb (20.5ms)
+  Rendered coins/edit.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 283ms (Views: 107.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/coins/2" for 127.0.0.1 at 2016-10-09 20:26:51 -0400
+Processing by CoinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y8botryhu+7zgzPTqBZtyAflDqGzXF7HQHdFapROCcpjKe8YqaOtaU4GVSlJaBnAe7OazPpYY+Xxm0rBEa5HPw==", "coin"=>{"country"=>"Tanzania", "denomination"=>"1 Shilling", "date"=>"1999", "notes"=>"", "mintage"=>"45,345,000", "grade"=>"VF+", "condition_notes"=>"", "catalog_no"=>"KM 343", "diameter"=>"34.2 mm", "composition"=>"", "mass"=>"434.3 g", "thickness"=>"", "shape"=>"", "orientation"=>"", "other_notes"=>""}, "commit"=>"Update", "id"=>"2"}
+  [1m[35mCoin Load (0.3ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "coins" SET "diameter" = $1, "updated_at" = $2 WHERE "coins"."id" = $3  [["diameter", "34.2 mm"], ["updated_at", "2016-10-10 00:26:51.727092"], ["id", 2]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCoin Load (0.2ms)[0m  SELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/coins/2
+Completed 302 Found in 12ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/coins/2" for 127.0.0.1 at 2016-10-09 20:26:51 -0400
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1mSELECT  "coins".* FROM "coins" WHERE "coins"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered coins/_coin.html.erb (90.6ms)
+  Rendered coins/edit.html.erb within layouts/application (96.2ms)
+Completed 200 OK in 216ms (Views: 108.4ms | ActiveRecord: 0.2ms)
