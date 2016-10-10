@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/'=> 'coins#index'
   get '/coins' => 'coins#index'
   get '/coins/print' => 'coins#print', as: :print_coins
   get '/coins/new' => 'coins#new', as: :new_coin
